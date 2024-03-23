@@ -59,7 +59,7 @@ if __name__ == '__main__':
     wys = 500                       #wysokość cylindra
     num_points = 5000               #ilość punktów w chmurze c
     cylinder = cylinderfun(num_points, promien, wys)
-    with open('cylinder_points.xyz', 'w', encoding='utf-8', newline='\n') as csvfile:
+    with open('cylinder.xyz', 'w', encoding='utf-8', newline='\n') as csvfile:
         csvwriter = writer(csvfile)
         for cyl in cylinder:
             csvwriter.writerow(cyl)
